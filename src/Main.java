@@ -1,22 +1,21 @@
+import java.awt.*;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Rectangle r1 = new Rectangle(2,3,4,5);
-        Rectangle r2 = new Rectangle();
-        Rectangle r3 = new Rectangle(7,8);
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("Här skapar vi rektanglar");
 
-        System.out.println(r1);
-        System.out.println(r2);
-        System.out.println(r3);
+        System.out.println("Ange höjden:");
+        double height = sc.nextDouble();
 
+        System.out.println("Ange bredden:");
+        double width = sc.nextDouble();
 
-        System.out.println(r1.calculateArea());
-        System.out.println(r2.calculateArea());
-        System.out.println(r3.calculateArea());
+        Rectangle r1 = new Rectangle(width, height);
 
-        System.out.println(r1.calculatePerimeter());
-        System.out.println(r2.calculatePerimeter());
-        System.out.println(r3.calculatePerimeter());
+        print(r1)
 
 
     }
